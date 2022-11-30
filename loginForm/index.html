@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Signup</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@700&family=Lexend+Deca:wght@100;200;300&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+<form>
+ <div class="container">
+    <h1> Welcome</h1>
+    <p>Please fill the form below to register</p>
+    <label for="firstname"></label> <br>
+    <input type="text" placeholder="Enter First Name" name="firstname" required> <br>
+    <label for="lastname"></label><br>
+    <input type="text" placeholder="Enter Last Name" name="lastname" required> <br>
+    <label for="phonenumber"></label> <br>
+    <input type="number" placeholder="Enter Phone Number" name="phonenumber" required> <br>
+    <label for="email"></label> <br>
+    <input type="email" placeholder="Enter Email Address" name="email" required> <br>
+    <label for="gender"> </label> <br>
+    <select name="gender" class="gender" required> <br>
+	    <option value="none" selected><b>Gender</b></option> 
+    	<option value="male">Male</option>
+	    <option value="female">Female</option>
+	    <option value="other">other</option>
+   </select> 
+   <label for="dob" class="label-for-dob">Date of Birth</label> <br>
+   <input type="date" required id="dob"> <br>
+   <label for="favcolor" class="laber-for-favcolor">Favourite Color</label> <br>
+   <input type="color" id="favcolor" name="favcolor"
+       value="#f50000" required><br>
+   <a href="login.html"> <button class="btn"> Register</button></a>
+ </div>
+</form>
+</body>
+</html>

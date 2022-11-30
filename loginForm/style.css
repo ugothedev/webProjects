@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap");
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+body{
+  background-color: rgb(228, 169, 59);
+}
+form{
+    box-sizing: border-box;
+}
+input[type=text], input[type=password], input[type=email], input[type=number]{
+padding: 5px;
+position: relative;
+height: 35px;
+border-radius: 10px;
+left: 30px;
+width: 80%;
+}
+.gender{
+  margin-left: 30px;
+  border-color: #fff;
+  cursor: pointer;
+}
+.label-for-dob{
+  position: absolute;
+  font-size: 15px;
+  margin-left: 138px;
+  margin-top: 107px;
+ }
+#dob{
+  position: absolute;
+  margin-top: 20px;
+  font-size: 13px;
+  margin-left: 125px;
+  text-align: center;
+  cursor: pointer;
+  color: rgba(117, 117, 117, 0.548)
+}
+.laber-for-favcolor{
+  position: absolute;
+  margin-top: 107px;
+  margin-left: 250px;
+}
+#favcolor{
+  position: absolute;
+  margin-top: -14px;
+  margin-left: 280px;
+  cursor: pointer;
+}
+form input{
+  padding: 0 5px;
+  height: 20px;
+  border: 1px solid rgb(196, 196, 196);
+  background: none;
+  outline: none;
+}
+label{
+  position: relative;
+  margin-left: 20px;
+  top: 50%;
+  left: 5px;
+  color: rgb(0, 0, 0);
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+.container{
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ background: #fff;
+ width: 400px;
+ height: 570px;
+ border-radius: 20px;
+}
+.container h1{
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: -10px;
+  font-size: 30px;
+}
+.container p{
+  text-align: center;
+  font-family: "Lexend Deca", sans-serif;
+}
+button{
+  background:rgb(228, 169, 59);
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 83%;
+  height: 50px;
+  border-radius: 10px;
+  margin-left: 30px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.form2{
+  box-sizing: border-box;
+}
+#psw, #user{
+padding: 5px;
+position: relative;
+height: 35px;
+border-radius: 10px;
+left: 30px;
+width: 80%;
+}
+.form2 input{
+padding: 0 5px;
+height: 20px;
+border: 1px solid rgba(117, 117, 117, 0.548);
+background: none;
+outline: none;
+}
+#label2{
+position: relative;
+margin-left: 20px;
+top: 50%;
+left: 5px;
+color: rgb(0, 0, 0);
+transform: translateY(-50%);
+pointer-events: none;
+}
+.cont{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background: #fff;
+width: 400px;
+height: 570px;
+border-radius: 20px;
+}
+.cont h1{
+text-align: center;
+margin-top: 50px;
+font-size: 30px;
+}
+.btn{
+background:rgb(228, 169, 59);
+color: black;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+width: 83%;
+height: 50px;
+border-radius: 10px;
+margin-left: 30px;
+margin-top: 20px;
+margin-bottom: 40px;
+}
+.success{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  width: 400px;
+  height: 570px;
+  border-radius: 20px;
+  text-align: center;
+ }
+i{
+  color: #9ABC66;
+  font-size: 100px;
+  line-height: 200px;
+  position: absolute;
+  margin-top: 100px;
+  margin-left: -35px;
+}
+.success h1{
+  color: #9ABC66;
+  font-size: 70px;
+  margin-top: 250px;
+}
+.success p{
+  font-size: 20px;
+  margin-top: -30px;
+}
