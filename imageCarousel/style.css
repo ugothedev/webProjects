@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+  max-height: 100vh;
+  max-width: 100%;
+}
+body {
+  background-color: rgb(192, 0, 0);
+  margin: 0;
+}
+/* Hide the images by default */
+.images {
+  display: none;
+  margin-top: 50px;
+}
+/* carousel container */
+.carousel-container {
+  max-width: 40%;
+  max-height: 500px;
+  position: relative;
+  margin: auto;
+}
+/*Hide icons until image is hovered upon */
+.carousel-container:hover > a {
+  display: block;
+}
+/* Next & previous icons */
+.prev-icon,
+.next-icon {
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* Position the "next button" to the right */
+.next-icon {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a red background color */
+.prev-icon:hover,
+.next-icon:hover {
+  background-color: rgb(117, 0, 0);
+}
+/* Position the "circles" to the right */
+.cicles-container {
+  text-align: center;
+}
+.circles {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  margin-top: 100px;
+  background-color: rgb(255, 62, 62);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active,
+.circles:hover {
+  background-color: #ffffff;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Carousel</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="carousel-container">
+      <div class="images">
+        <img src="images/Geefts Treats Logo.png" />
+      </div>
+
+      <div class="images">
+        <img src="images/Kelvin Tutorials Flyer.png" />
+      </div>
+
+      <div class="images">
+        <img
+          src="images/Kelvins Tutorial Whastapp Catalog Flyer Template Adult Tutoring.png"
+        />
+      </div>
+
+      <div class="images">
+        <img src="images/Land Design.png" />
+      </div>
+
+      <div class="images">
+        <img src="images/Lexxie Cakes 1.png" />
+      </div>
+
+      <div class="images">
+        <img src="images/Opil 2.PNG" />
+      </div>
+
+      <a class="prev-icon" onclick="changeImages(-1)">❮</a>
+      <a class="next-icon" onclick="changeImages(1)">❯</a>
+    </div>
+
+    <div class="cicles-container">
+      <span class="circles" onclick="currentImage(1)"></span>
+      <span class="circles" onclick="currentImage(2)"></span>
+      <span class="circles" onclick="currentImage(3)"></span>
+      <span class="circles" onclick="currentImage(4)"></span>
+      <span class="circles" onclick="currentImage(5)"></span>
+      <span class="circles" onclick="currentImage(6)"></span>
+    </div>
+    
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+  
+      function changeImages(n) {
+        showSlides((slideIndex += n));
+      }
+  
+      function currentImage(n) {
+        showSlides((slideIndex = n));
+      }
+  
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("images");
+        let circles = document.getElementsByClassName("circles");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < circles.length; i++) {
+          circles[i].className = circles[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        circles[slideIndex - 1].className += " active";
+      }
+    </script>
+  </body>
+</html>
