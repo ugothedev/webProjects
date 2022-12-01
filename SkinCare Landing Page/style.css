@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+/* Header screen */
+header {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #9e714a;
+  position: relative;
+}
+/* Navigation Links */
+nav {
+  display: flex;
+  padding-left: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-right: 10px;
+}
+.logo {
+  width: 100px;
+  margin-left: 15px;
+  margin-top: -30px;
+  position: absolute;
+}
+.nav-links {
+  flex: 1;
+  text-align: center;
+}
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.nav-links ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 13px;
+}
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #ffffff;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+/* Header Image */
+.hero-image {
+  height: 90%;
+  display: block;
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  right: 0;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.screen-1 {
+  margin-left: 30px;
+  margin-top: 12%;
+}
+.screen-1 h1 {
+  font-size: 60px;
+  line-height: 80px;
+  margin-bottom: 10px;
+  color: #3a281a;
+}
+.screen-1 p {
+  color: #3a281a;
+  line-height: 25px;
+}
+/* Header button */
+.screen-1 .hero-button {
+  display: inline-block;
+  background: #3a281a;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #ffffff;
+  box-shadow: 3px 8px 22px rgba(94, 28, 68, 0.15);
+  margin-top: 20px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.screen-1 .hero-button:hover {
+  background-color: #9e714a;
+  color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+}
+.screen-1-bottom {
+  background: #3a281a;
+  color: #ffffff;
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  font-size: 18px;
+  column-gap: 20%;
+}
+
+/* Screen two */
+.screen-2 {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.screen-2 img {
+  width: 40%;
+  margin-left: 30px;
+  display: block;
+  margin-top: 10%;
+}
+
+/* Screen three */
+.screen-3 {
+  min-height: 100vh;
+  display: flex;
+  background-color: #9e714a;
+}
+.screen-3 img {
+  height: 90%;
+  display: block;
+  position: absolute;
+  margin: 0;
+  margin-top: 50px;
+}
+.screen-3 h1 {
+  font-size: 45px;
+  color: #3a281a;
+}
+.screen-3-btn {
+  display: inline-block;
+  background: #3a281a;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #ffffff;
+  box-shadow: 3px 8px 22px rgba(94, 28, 68, 0.15);
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.screen-3-btn:hover {
+  background-color: #9e714a;
+  color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+}
+
+/* Screen four */
+.screen-4 {
+  min-height: 100vh;
+  display: flex;
+  column-gap: 80px;
+}
+.icons-div {
+  text-align: center;
+  margin-top: 25%;
+}
+.icons-div img {
+  height: 80px;
+  padding-top: 20px;
+  display: block;
+  margin: auto;
+}
+.icons-div1 {
+  display: flex;
+  column-gap: 40px;
+}
+.icons-div2 {
+  display: flex;
+  column-gap: 40px;
+}
+.icons {
+  column-width: 150px;
+  height: 150px;
+}
+.icons {
+  box-shadow: 3px 8px 22px rgba(94, 28, 68, 0.15);
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.icons:hover {
+  box-shadow: none;
+  border-radius: none;
+}
+.screen-4 h1 {
+  font-size: 40px;
+  color: #000000;
+}
+.screen-4-btn {
+  display: inline-block;
+  background: #3a281a;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #ffffff;
+  border-radius: 50px;
+}
+.screen-4-btn:hover {
+  box-shadow: 3px 8px 22px rgba(94, 28, 68, 0.15);
+  border: 2px solid #3a281a;
+}
+
+/* Screen five */
+.screen-5 {
+  min-height: 100vh;
+  margin-top: -40px;
+}
+.screen-5 img {
+  width: 50%;
+  border-radius: 10px;
+  margin-top: 7%;
+  margin-left: 30px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  margin-top: 4%;
+  margin-left: 30px;
+  max-width: 50%;
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.faqs-flex {
+  display: flex;
+}
+#faqs-list {
+  position: absolute;
+  right: 90px;
+  margin-top: 7%;
+  line-height: 100px;
+}
+#faqs-list a {
+  text-decoration: none;
+  color: #000000;
+}
+#faqs-list p {
+  border-left: 5px solid #3a281a;
+  padding-left: 10px;
+  margin: 25px;
+  box-shadow: 3px 8px 22px rgba(94, 28, 68, 0.15);
+  width: 450px;
+  height: 80px;
+}
+#faqs-list p:hover {
+  box-shadow: none;
+}
+.screen-6 {
+  background-color: #9e714a;
+  min-height: 70vh;
+}
+.screen-6 h1 {
+  margin-left: 9%;
+  margin-top: 2%;
+  font-size: 30px;
+  position: absolute;
+  color: #ffffff;
+}
+.screen-6 h4 {
+  text-align: center;
+}
+.testimonials-div {
+  position: absolute;
+  margin-top: 8%;
+  column-gap: 50px;
+  width: 80%;
+  cursor: pointer;
+  margin-left: 9%;
+}
+.testimonials-div-col {
+  height: 250px;
+  width: 50%;
+  background: white;
+  padding: 25px;
+}
+.testimonials-div-col p{
+  line-height: 25px;
+  text-align: center;
+}
+.testimonials-div img {
+  display: block;
+  height: 50px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.screen-6-bottom {
+  background: #3a281a;
+  height: 120px;
+  color: #ffffff;
+  padding: 20px;
+}
+.screen-6-bottom-button {
+  position: absolute;
+  display: inline-block;
+  background: #ffffff;
+  padding: 10px 10px;
+  text-decoration: none;
+  color: #3a281a;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+.screen-6-bottom-button:hover {
+  background-color: #3a281a;
+  color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+}
+.social-icons {
+  position: absolute;
+  margin-top: -70px;
+  padding: 20px;
+}
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+.fa-instagram {
+  background: #3f729b;
+  color: white;
+}
